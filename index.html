@@ -1,0 +1,280 @@
+<!-- Force deploy -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Détection et suivi des lésions pulmonaires post-COVID</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="presentation">
+    
+    <!-- Slide 1: Title Slide (Blue) -->
+    <section class="slide slide-title" data-index="1">
+      <div class="slide-bg slide-bg-blue"></div>
+      <div class="slide-content">
+        <div class="slide1-wrapper">
+          <div class="slide1-header">
+            <h3>IMPACT DU COVID-19 & SUIVI PULMONAIRE</h3>
+            <p>Le Rôle Central de l'Imagerie Médicale et de l'Intelligence Artificielle</p>
+          </div>
+          
+          <div class="slide1-title-section">
+            <h1>Détection et suivi des lésions pulmonaires</h1>
+            <h2>dans les images thoraciques post-COVID-19</h2>
+          </div>
+          
+          <div class="slide1-footer-section">
+            <p>Présenté par :</p>
+            <div class="slide1-names-section">
+              <span>Bentouba Ferial</span>
+              <span>Benchao Chaima</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2: Introduction -->
+    <section class="slide" data-index="2">
+      <div class="slide-bg slide-bg-white"></div>
+      <div class="slide-content">
+        <div class="slide-header">
+          <h2>Introduction</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="two-column">
+          <div class="col-image">
+            <img src="slide2.png" alt="Introduction" class="slide-img">
+          </div>
+          <div class="col-text">
+            <p>Le COVID-19, causé par le virus SARS-CoV-2, est une maladie respiratoire qui a touché des millions de personnes dans le monde.</p>
+            <p>Même après la guérison, des séquelles peuvent persister : <strong>lésions pulmonaires post-COVID</strong>.</p>
+            <p>Ces anomalies, souvent invisibles cliniquement, sont détectées grâce à l'imagerie médicale.</p>
+            <p>L'objectif du suivi post-COVID est d'évaluer la récupération du tissu pulmonaire et d'adapter la prise en charge. L'imagerie joue ici un rôle central, car elle permet de visualiser directement les effets du virus sur les poumons.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3: Imagerie thoracique -->
+    <section class="slide" data-index="3">
+      <div class="slide-bg slide-bg-white"></div>
+      <div class="slide-content">
+        <div class="slide-header">
+          <h2>L'imagerie thoracique dans le suivi post-COVID</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="two-column">
+          <div class="col-image">
+            <img src="slide 1.png" alt="Imagerie thoracique" class="slide-img">
+          </div>
+          <div class="col-text">
+            <p>Dans le cadre du module Imagerie d'application, on étudie comment les différentes techniques d'imagerie peuvent être utilisées pour observer les organes. Pour le thorax, deux méthodes principales sont utilisées :</p>
+            <div class="method-box">
+              <h3>Radiographie</h3>
+              <p>Rapide, peu coûteuse et utilisée pour une première évaluation</p>
+            </div>
+            <div class="method-box">
+              <h3>Scanner thoracique (TDM)</h3>
+              <p>Plus précis, il permet d'obtenir des coupes fines des poumons et de détecter les anomalies subtiles</p>
+            </div>
+            <p class="note">Les images post-COVID révèlent souvent des opacités, des zones inflammatoires ou des cicatrices fibreuses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4: Types de lésions -->
+    <section class="slide" data-index="4">
+      <div class="slide-bg slide-bg-white"></div>
+      <div class="slide-content">
+        <div class="slide-header">
+          <h2>Types de lésions pulmonaires post-COVID</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="two-column">
+          <div class="col-image">
+            <img src="slide7.png" alt="Types de lésions" class="slide-img">
+          </div>
+          <div class="col-text">
+            <p>Après l'infection, plusieurs types de lésions peuvent persister :</p>
+            <div class="card">
+              <h3>Opacités en verre dépoli</h3>
+              <p>Zones floues sur les scanners, signe d'une inflammation encore présente.</p>
+            </div>
+            <div class="card">
+              <h3>Fibrose pulmonaire</h3>
+              <p>Épaississement irréversible du tissu pulmonaire, réduction de la capacité respiratoire.</p>
+            </div>
+            <div class="card">
+              <h3>Cicatrices et nodules</h3>
+              <p>Traces laissées par la réparation du tissu pulmonaire.</p>
+            </div>
+            <p class="highlight">Les algorithmes d'IA peuvent quantifier automatiquement le volume et la gravité de ces zones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: Méthodes de détection -->
+    <section class="slide" data-index="5">
+      <div class="slide-bg slide-bg-white"></div>
+      <div class="slide-content">
+        <div class="slide-header">
+          <h2>Méthodes de détection</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h3>Acquisition et prétraitement</h3>
+              <p>Amélioration du contraste, réduction du bruit, et correction des artefacts pour optimiser la qualité des images.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h3>Segmentation</h3>
+              <p>Identification automatique des zones anormales (opacités, fibroses, nodules). Les techniques utilisées incluent le seuillage, les contours actifs et surtout l'intelligence artificielle (IA).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h3>Classification</h3>
+              <p>Différenciation entre les tissus sains et les tissus atteints à l'aide d'algorithmes d'apprentissage automatique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 6: Détection et classification -->
+    <section class="slide" data-index="6">
+      <div class="slide-bg slide-bg-white"></div>
+      <div class="slide-content">
+        <div class="slide-header">
+          <h2>Détection et classification des lésions</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="two-column">
+          <div class="col-image">
+            <img src="slide6.png" alt="Détection et classification" class="slide-img">
+          </div>
+          <div class="col-text">
+            <p>Traditionnellement, la détection des lésions se faisait manuellement par les radiologues à l'aide de techniques de traitement d'image classiques (seuillage, filtrage, segmentation). Cependant, cette méthode est lente et dépend de l'expérience de l'observateur.</p>
+            <p>Aujourd'hui, les progrès en intelligence artificielle ont permis de développer des <strong>réseaux de neurones convolutifs (CNN)</strong>, capables d'analyser automatiquement les images médicales.</p>
+            <div class="tech-list">
+              <div class="tech-item">U-Net</div>
+              <div class="tech-item">ResNet</div>
+              <div class="tech-item">VGG-16</div>
+            </div>
+            <p>Ces modèles peuvent :</p>
+            <ul>
+              <li>Segmenter les poumons et isoler les lésions</li>
+              <li>Classer les lésions selon leur gravité</li>
+              <li>Mesurer l'étendue et le pourcentage de tissu atteint</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 7: Suivi dans le temps -->
+    <section class="slide" data-index="7">
+      <div class="slide-bg slide-bg-white"></div>
+      <div class="slide-content">
+        <div class="slide-header">
+          <h2>Suivi dans le temps</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="two-column">
+          <div class="col-image">
+            <img src="slide3.png" alt="Suivi dans le temps" class="slide-img">
+          </div>
+          <div class="col-text">
+            <p>Le suivi post-COVID repose sur la comparaison d'images acquises à différents moments (par exemple à J0, J30, J90). Cette approche permet de :</p>
+            <div class="timeline">
+              <div class="timeline-point">J0</div>
+              <div class="timeline-point">J30</div>
+              <div class="timeline-point">J90</div>
+            </div>
+            <p>Cette approche permet de :</p>
+            <ul>
+              <li>Vérifier la régression ou la persistance des lésions</li>
+              <li>Évaluer la récupération pulmonaire</li>
+              <li>Adapter le traitement ou la rééducation</li>
+            </ul>
+            <p class="note">L'imagerie devient donc un outil dynamique, permettant un suivi longitudinal de la santé pulmonaire.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 8: Limites et perspectives -->
+    <section class="slide" data-index="8">
+      <div class="slide-bg slide-bg-white"></div>
+      <div class="slide-content">
+        <div class="slide-header">
+          <h2>Limites et perspectives</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="two-col-equal">
+          <div class="box limits-box">
+            <h3>Limites</h3>
+            <ul>
+              <li>Bases d'images post-COVID encore limitées</li>
+              <li>Différences entre les paramètres d'acquisition des hôpitaux</li>
+              <li>Validation clinique nécessaire avant utilisation réelle</li>
+            </ul>
+          </div>
+          <div class="box perspectives-box">
+            <h3>Perspectives</h3>
+            <ul>
+              <li>Création de bases de données internationales</li>
+              <li>Intégration de l'IA dans les systèmes hospitaliers (RIS/PACS)</li>
+              <li>Développement d'outils d'aide au diagnostic automatisé (CAD)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 9: Conclusion -->
+    <section class="slide slide-conclusion" data-index="9">
+      <div class="slide-bg slide-bg-white"></div>
+      <div class="slide-content">
+        <div class="conclusion-wrapper">
+          <div class="conclusion-header">
+            <h2>Conclusion</h2>
+            <div class="accent-line"></div>
+          </div>
+          
+          <div class="conclusion-text-block">
+            <p>La détection et le suivi des lésions pulmonaires post-COVID illustrent parfaitement le <strong>rôle central de l'imagerie d'application</strong>. Ce domaine relie <strong>médecine, physique et informatique</strong> pour transformer les images en informations utiles au diagnostic. Grâce à la <strong>tomodensitométrie</strong> et à l'<strong>intelligence artificielle</strong>, l'imagerie médicale devient un outil puissant pour mieux comprendre les effets du COVID-19 et accompagner les patients dans leur rétablissement. L'avenir de la médecine réside dans l'alliance entre expertise humaine et technologies innovantes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <button id="prev-btn" class="nav-btn nav-prev" title="Précédent">‹</button>
+    <div class="slide-counter">
+      <span id="current">1</span><span class="separator">/</span><span id="total">9</span>
+    </div>
+    <button id="next-btn" class="nav-btn nav-next" title="Suivant">›</button>
+  </nav>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progress"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

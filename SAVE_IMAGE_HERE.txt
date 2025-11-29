@@ -1,0 +1,10 @@
+📌 IMPORTANT - Image File Required
+
+To complete the slide 1 design, save the attached COVID-19 pulmonary image as:
+
+📁 Location: c:\Users\sohai\Desktop\prsnt\
+📄 Filename: slide1.png
+
+The HTML is already configured to display this image on the title slide between the subtitle and presenter names.
+
+Once you save the image file with the correct name, refresh the browser and it will appear automatically.
